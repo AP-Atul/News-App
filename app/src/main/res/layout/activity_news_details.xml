@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewsDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rL"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+    <WebView
+        android:id="@+id/newsVideo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/imageNew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@drawable/ic_mail_black_24dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingForward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBackward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/ic_arrow_backward_black_24dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/newTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rL"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Title:"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="-16dp" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTitle"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_share_black_24dp" />
+
+    <ImageView
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTitle"
+        android:layout_toLeftOf="@id/share"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_video_play_24dp" />
+
+    <TextView
+        android:id="@+id/newsCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newTitle"
+        android:layout_marginRight="10dp"
+        android:text="City:"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/newsDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/newsCity"
+        android:text="Description:"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:textSize="15sp"/>
+
+    </RelativeLayout>
+</ScrollView>

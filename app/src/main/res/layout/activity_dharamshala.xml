@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.DharamshalaActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+    <EditText
+        android:id="@+id/searchBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/back"
+        android:layout_marginRight="50dp"
+        android:hint="Enter City Name"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/back"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dharamRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchBox"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressDharam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

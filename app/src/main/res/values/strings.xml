@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Jain News</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="hindi_title" tools:ignore="ExtraTranslation">|| जय जिनेन्द्र ||</string>
+    <string name="hindi_content" tools:ignore="ExtraTranslation">जिसमे जैन तीर्थ, जैन संत - आचार्य मुनि - माताजी, चातुर्मास, विहार, प्रवचन, तीर्थ वन्दना, पंचकल्याणक  प्रतिष्ठा, वेदी प्रतिष्ठा, विधान, अवतरण दिवस, दीक्षा महोत्सव, जन्म जयंती, धर्मशाला, महा- मस्तकाभिषेक इत्यादि की जानकारी देने के लिए विश्व की प्रथम जैन समाचार धार्मिक \'जैन न्यूज़\' सभी जानकारी इस एप्लीकेशन द्वारे फ़ोन पे ही प्राप्त कर सकेंगे | जैन न्यूज़ समय पर लोगोंतक फॉरवर्ड की जाती है |</string>
+</resources>

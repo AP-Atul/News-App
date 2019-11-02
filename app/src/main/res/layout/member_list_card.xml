@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:outlineAmbientShadowColor="@color/colorPrimary"
+    android:elevation="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="15dp">
+
+
+    <RelativeLayout
+        android:id="@+id/trendingRL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/trendingImage" />
+
+        <TextView
+            android:id="@+id/trendingName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/trendingImage"
+            android:gravity="left"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Image"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/trendingEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/trendingImage"
+            android:layout_below="@id/trendingName"
+            android:gravity="left"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Email: "
+            android:textColor="#2196F3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/trendingContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trendingEmail"
+            android:layout_toRightOf="@id/trendingImage"
+            android:gravity="left"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Contact: "
+            android:textColor="#95000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/trendingDesc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/trendingContact"
+            android:layout_toRightOf="@id/trendingImage"
+            android:gravity="left"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="Contact: "
+            android:textColor="#95000000"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
